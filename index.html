@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,6 @@
 	<link rel="stylesheet" href="assets/files/bootstrap.min.css">
   <script src="assets/files/jquery.min.js"></script>
   <script src="assets/files/bootstrap.min.js"></script>
-  
     <title>Manisha Gupta</title>
 
     <!-- Bootstrap CSS -->
@@ -76,7 +74,7 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo" style='background-color: rgb(216 216 216 / 65%)'>
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -89,30 +87,34 @@
           
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-center clearfix" style="font-size: 17px">
-              
+            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  Home
+                </a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href='javascript:;' onclick="smoothScroll(document.getElementById('hero-area'))">
+                <a class="nav-link" href="#about">
                   About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='javascript:;' onclick="smoothScroll(document.getElementById('services'))">
+                <a class="nav-link" href="#services">
                   Services
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='javascript:;' onclick="smoothScroll(document.getElementById('resume'))">
-                  Work Experience & Education
+                <a class="nav-link" href="#resume">
+                  Resume
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='javascript:;'  onclick="smoothScroll(document.getElementById('projects'))">
-                  Projects & Milestones
+                <a class="nav-link" href="#extra">
+                  Milestones
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='javascript:;' onclick="smoothScroll(document.getElementById('contact'))">
+                <a class="nav-link" href="#contact">
                   Contact
                 </a>
               </li>
@@ -123,17 +125,19 @@
         <!-- Mobile Menu Start -->
         <ul class="onepage-nev mobile-menu">
           <li>
-            <a href="#hero-area">About</a>
+            <a href="#hero-area">Home</a>
           </li>
-         
+          <li>
+            <a href="#about">About</a>
+          </li>
           <li>
             <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#resume">Work Experience & Education</a>
+            <a href="#resume">Resume</a>
           </li>
           <li>
-            <a href="#projects">Projects & Milestones</a>
+            <a href="#extra">Milestones</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -143,244 +147,247 @@
       </nav>
       <!-- Navbar End --> 
 
-
-
-    </header>
-    <!-- Header Area wrapper End -->
-	      <!-- Hero Area Start -->
-      <div id="hero-area" class="fullscrenn" style=' height: 100vh;'	> <!--<div class="overlay"></div>-->
-        <div class="container" style='margin-bottom:-10%'>
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
               <div class="contents">
                 <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Manisha Gupta</h2><br/>
-              <h6 class="script-font wow fadeInUp" data-wow-delay="0.2s">Software Development | Data Science | Website Devlopment</h6>
+                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Manisha Gupta</h2>
+             
                 </div>
             </div>
           </div>
         </div>
-	
       </div>
+      <!-- Hero Area End -->
 
-    <div id='intro' class="section-padding" style='padding-bottom:0'>
-      <div class="">
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
         <div class="row">
-		<div class="col-md-6 col-lg-4 col-sm-12 text-center">
-              <div id ='profilepic' class="img-thumb">
-              <img class="center-block" src="assets/img/myimage1.jpeg"/>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src="assets/img/myimage.jpeg" alt="">
             </div>
-			<div class='text-center section-padding'>
-              <a href="assets\Manisha_gupta_resume.pdf" target = "_blank" class="btn btn-common" style="color:white !important"><i class="icon-paper-clip" style="color:white !important"></i> Resume</a>
-				</div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h3>Welcome to my page!</h3><br/>
+              <p>Working with Cognizant Technology Solutions, Gurgaon with 5+ years of experience. Proficient in designing, developing and maintaining applications using Microsoft Technologies with strong background in product development and project management.<br/><br/>
+I have a knack for problem solving and tend to details in order to bring perfection in my work. Having a spotless track record of working in Agile environment with stringent timelines, I am a good team player and can also lead pursuits, depending on the requirement. I happen to be an occasional poetess and love trying my hands at new activities. My motto- <b>Keep learning, keep growing!</b></p>
+              <br/>
+              <a href="assets\CV_Manisha.pdf" target = "_blank" class="btn btn-common"><i class="icon-paper-clip"></i> Detailed CV</a>
+              <a href="assets\CV_Manisha.pdf" target = "_blank" class="btn btn-common"><i class="icon-paper-clip"></i> One Pager Resume</a>
             </div>
-         <div class="col-md-6 col-lg-8 col-sm-12 text-center">
-              <div class="contents">
-                <p>Current Graduate student pursuing <b>MS in ECE (Machine Learning and Data Science) from University of Southern California</b> with <b>5+ years of work experience.</b> Proficient in designing, developing and maintaining applications using Python/C# with strong background in product development and project management</h6>
-				<p/><br/>
-				<p>I have a knack for problem solving and tend to details in order to bring perfection in my work. Having a spotless track record of working in Agile environment with stringent timelines, I am a good team player and can also lead pursuits, depending on the requirement. I happen to be an occasional poetess and love trying my hands at new activities.
-				<b>My motto- Keep learning, keep growing!</b></p>
-                </div>
-            </div>
-          
-		</div>
-		</div>
-    </div>
-	<hr class="solid"  style="width:33%">
-      <!-- service Section start -->
-  
-	 <section id="services" class="services section-padding">
-      <h2 class="section-title"  >What I do</h2>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
       <div class="container">
         <div class="row">
           <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            <div class="services-item" >
-              <div class="icon">
-                <i class="icon-graph"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">MACHINE LEARNING</a></h3>
-                <p>Experienced in machine learning model design, feature selection and evaluation</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            <div class="services-item" >
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
               <div class="icon">
                 <i class="icon-grid"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">SOFTWARE DEVELOPER</a></h3>
-                <p>Enthusiast for new problem solving and implentation</p>
-              </div>
-            </div>
-          </div>
-		  </div>
-		  <div class="row">
-		  <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            <div class="services-item ">
-              <div class="icon">
-                <i class="icon-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">WEB DEVELOPMENT</a></h3>
-                <p>Experienced in building CMS based websites using Umbraco and Wordpress for 20+ client's projects</p>
+                <h3><a href="#">Back-end Developer</a></h3>
+                <p>Independently responsible for enhancement and maintenance of 20+ client's websites</p>
               </div>
             </div>
           </div>
           <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            <div class="services-item ">
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="icon-layers"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Umbraco Specialist</a></h3>
+                <p>Specializing in building websites using the Umbraco CMS platform for over 5 years</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="icon-screen-desktop"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">SQL Developer</a></h3>
+                <p>Reviewed, evaluated, designed, implemented and maintained company databases</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
               <div class="icon">
                 <i class="icon-user"></i>
               </div>
               <div class="services-content">
                 <h3><a href="#">Professional Attribute</a></h3>
-                <p>Ability to operate independently and make decisions without detailed supervision</p>
+                <p>Ability to operate independently and make decisions with little direct supervision</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-	<!-- service Section end -->
-  
+    <!-- Services Section End -->
+
     <!-- Resume Section Start -->
-    <div id="resume" class="section-padding" style='padding-bottom:0'>
-      <div class="">
+    <div id="resume" class="section-padding">
+      <div class="container">
         <div class="row">
          
-          <div class="col-lg-12 col-md-12 col-sm-6">
-            <div class="experience">
-				<ul class="timeline">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
                 <li>
                   <i class="icon-briefcase"></i>
                   <h2 class="timelin-title">Experience</h2>
                 </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Associate-Projects - Cognizant Technology Solutions</h3>
+                    <span>Aug 2016 - Present</span>
+                    <p class="line-text">Management of the Business to Business (B2B) websites along side with the continuous development and enhancements using the latest technology.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">System Engineer - TCS</h3>
+                    <span>Mar 2014 - Aug 2016</span>
+                    <p class="line-text">Created and maintained client's websites via Umbraco. Created packages for pulling online website and retail data & performed ETL operations to transfer this data to analytics platform</p>
+                  </div>
+                </li>
                 
               </ul>
-			   <div class="row" style='padding-top:4%;padding-bottom:4%'>
-				  <!-- Services item -->
-				   <div class="col-md-6 col-lg-3 col-xs-12 flip-card">
-					<div class="services-item flip-card-inner" >
-					  
-					  <div class="services-content flip-card-front">
-						<a href="https://seedstages.com/" target="_blank"><img style="max-width: 100%;height: 87px;" src="assets/img/seedstages.jfif" alt=""></a>
-						
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;padding-top:15px">Data Science Intern</h2><h3 style='padding-bottom: 15px;'>Seedstages</h3>
-                    <span>Nov 2020 - Present (Part Time)</span><br/>
-					  </div>
-					  <div class="flip-card-back">
-						  <p> Currently working on Classification model for performance prediction and startups success probability</p>
-						</div>
-					</div>
-				  </div>
-				  <div class="col-md-6 col-lg-3 col-xs-12 flip-card">
-					<div class="services-item flip-card-inner" >
-					  
-					  <div class="services-content flip-card-front"><br/>
-						<a href="https://www.provost.usc.edu/" target="_blank"><img style="max-width: 100%;height: 40px;" src="assets/img/usclogo.png" alt=""></a>
-						<br/>
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;padding-top:35px">Web Design Specialist</h2><h3>University of Southern California</h3>
-                    <span>Aug 2020 - Present (Part Time)</span>
-					  </div>
-					  <div class="flip-card-back">
-						  <p> Website design and development of USC Provost IT clients using Wordpress</p>
-						</div>
-					</div>
-				  </div>
-				  
-				  
-				    <!-- Services item -->
-				  <div class="col-md-6 col-lg-3 col-xs-12 flip-card">
-					<div class="services-item flip-card-inner">
-					  
-					  <div class="services-content flip-card-front">
-						<a href="https://www.cognizant.com/" target="_blank"><img style="max-width: 100%;height: 101px;" src="assets/img/cognizant.png" alt=""></a><br>
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;">Associate-Projects</h2><h3>Cognizant Technology Solutions</h3>
-                    <span>Aug 2016 - Nov 2019  (Full Time)</span>
-					  </div>
-					   <div class="flip-card-back">
-						  <p> Management of the Business to Business (B2B) websites along side with the continuous development and enhancements using the latest technology.</p>
-						</div>
-					</div>
-				  </div>
-				  <div class="col-md-6 col-lg-3 col-xs-12 flip-card">
-					<div class="services-item flip-card-inner" >
-					  
-					  <div class="services-content flip-card-front"><br/>
-						<a href="https://www.tcs.com/" target="_blank"><img style="max-width: 100%;height: 40px;" src="assets/img/tcs.png" alt=""></a>
-						
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;padding-top:38px">System Engineer</h2><h3 style='padding-bottom: 15px;'>Tata Consultancy Services</h3>
-                    <span>Mar 2014 - Aug 2016  (Full Time)</span><br/>
-					  </div>
-					  <div class="flip-card-back">
-						  <p> Created and maintained client's websites via Umbraco. Created packages for pulling online website and retail data & performed ETL operations to transfer this data to analytics platform</p>
-						</div>
-					</div>
-				  </div>
-		  </div>
             </div>
           </div>
-		  </div>
-		  </div>
-    </div>
-    <!-- Resume Section End -->
-  	 <section id='Education' class="services section-padding" style='padding: 7%;padding-top:0'>
-
-      <div>
-	  <ul class="timeline">
+		   <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
                 <li>
                   <i class="icon-graduation"></i>
                   <h2 class="timelin-title">Education</h2>
                 </li>
-                
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">B.Tech In ECE - JECRC, Jaipur (Rajasthan Technical University, Kota)</h3>
+                    <span>2009 - 2013</span>
+					
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Higher Secondary School - Shiv Jyoti Sr Sec School, Kota</h3>
+                    <span>2007 - 2008</span>
+                    
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Secondary School - Tiny Tots Sr Sec School, Banswara</h3>
+                    <span>2005 - 2006</span>
+                   
+                  </div>
+                </li>
               </ul>
-			  
- <div class="row" style='padding-top:4%;padding-bottom:4%'>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            		<div class="services-item" >
-					  
-					  <div class="services-content"><br/>
-						<img style="max-width: 100%;height: 40px;" src="assets/img/usclogo.png" alt="">
-						
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;padding-top:38px">MS in Electrical and Computer Engineering (Machine Learning and Data Science)</h2><h3 style='padding-bottom: 15px;font-size: 24px'>University of Southern California</h3>
-                    <span>Jan 2020 - Dec 2021 </span><br/>
-					  </div>
-					</div>
+            </div>
           </div>
-          
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-6 col-xs-12">
-            			<div class="services-item" >
-					  
-					  <div class="services-content"><br/>
-						<img style="max-width: 100%;height: 63px;" src="assets/img/jecrc.png" alt="">
-						
-						<h2 class="line-title" style=" font-style: italic;    font-size: 17px;padding-top:20px">B.Tech in Electronics and Communications Engineering</h2><h3 style='padding-bottom: 10px;font-size: 24px'>Jaipur Engineering College and Research Center </h3>
-                    <span>Aug 2009 - Jun 2013 </span>
-					  </div>
-					</div>
-          </div>
-		  </div>
-		 
+        </div>
       </div>
-    </section>
-	<!-- Portfolio Section -->
-	<!-- Portfolio Section -->
-   <section id="portfolios" class="section-padding">
+    </div>
+    <!-- Resume Section End -->
+<!-- Services Section Start -->
+    <section id="extra" class="services section-padding" style="background-image: url(assets/img/gallery/img-4.jpg);">
+	
+	
+    
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Milestones</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="extra-item wow fadeInDown" data-wow-delay="0.3s">
+             
+              <div class="services-content">
+			  <div class="icon">
+                <i class="icon-diamond"></i>
+              </div>
+                <h3><a href="#">Awards & Achievements</a></h3>
+                <ul>
+		   <li><b><a href="assets/img/award1.jpg" target="_blank">Awarded with "Guiding Light"</a></b> Cognizant Internal award for team work and mentorship</li>
+		  <li><b><a href="assets/img/On The Spot Award.pdf" onclick="window.open('assets/img/On The Spot Award2.pdf');" target="_blank">Awarded twice with TCS Internal award</a></b> for dedicated work in meeting critical business requirements of project and on time delivery with zero defects</li>
+		  <li><b><a href="assets/img/Special Initiative.pdf" target="_blank">Awarded with "Special Initiative"</a> </b>TCS Internal award for designing business utility</li>
+		  
+		 
+		  </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="extra-item wow fadeInDown" data-wow-delay="0.6s">
+             
+              <div class="services-content">
+			  <div class="icon">
+                <i class="icon-docs"></i>
+              </div>
+                <h3><a href="#">Research Papers</a></h3>
+                <ul style="list-style-type:disc;">
+		   <li>Manisha Gupta, Deepika Bansal, and Shruti Kalra. <b><a href="https://www.ijaconline.com/" target="_blank">Analysis on Parametric and Non-Parametric Machine Learning Algorithms.</a></b> Journal of Analysis and Computation (JAC)(An International Peer Reviewed Journal), www.ijaconline.com, ISSN 0973-2861 Volume XII, Issue I, Jan-June 2019 </li>
+		  <li> Under Submission : Manisha Gupta and Deepika Bansal. <b> Logistic Regression for Machine Learning : A Primer. </b>IEEE Conference ICONC3 2019</li>
+		  
+		 
+		  </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="extra-item wow fadeInDown" data-wow-delay="0.9s">
+              
+              <div class="services-content">
+			  <div class="icon"><i class="icon-heart"></i></div>
+                <h3><a href="#">Volunteer Work</a></h3>
+                 <ul>
+				 <li><b>Volunteered as tutor for Mathematics and English</b> for 6th to 8th grade underprivileged students of village government schools</li>
+				 <li><b><a href="assets/img/Appreciation.pdf" target="_blank">Received Certificate of Appreciation</a></b> for organizing CSR cultural event and science fair in TCS, Gandhinagar</li>
+				 </ul>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+	 
+    </section><br/>
+    <!-- Services Section End -->
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section-padding">
       <div class="container">
   
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators --> <h2 class="section-title">Professional Summary</h2>
+    <!-- Indicators --> <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Project Details</h2>
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
        <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
@@ -388,14 +395,28 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
-
       <div class="item active">
         
         <div>
-          <h3>Lead Backend developer in Digital Production team - Cognizant</h3>
+          <h3>Project 1 : Lead Backend developer in Digital Production team</h3>
+          <ul>
+		   <li>Leading the Offshore team and with onsite coordination for requirements delivery</li>
+		   <li>Designed and developed standalone websites from scratch using Microsoft Technologies in NA consumer region for client in Retail and Consumer vertical</li>
+		  <li>Conceptualized & implemented the code logic, developed the database structure & ensured regular maintenance</li>
+		  <li>Coordinated with team members to successfully implement the assigned modules & program logic</li>
+		  <li>Consistently awarded and appreciated for playing a critical role in project deliverable</li>
+		 
+		  </ul>
+        </div>
+      </div>
+
+      <div class="item">
+        
+        <div>
+          <h3>Project 2 : Lead Backend developer in Digital Production team</h3>
          <ul style="list-style-type:disc;">
-		   <li>Enhancement projects by adding new modules to the existing client websites  using C# .Net, SQL Server and Umbraco as CMS for client in NA, EMEA, APAC, and LAO region</li>
-		   <li>Created Multilingual websites using Microsoft Technologies meeting client expectations from requirement stage to on-time end-to-end delivery</li>
+		   <li>Enhancement projects by adding new modules to the existing client websites  using C# .Net, SQL Server and Umbraco as CMS for client in  EMEA, APAC, and LAO region</li>
+		   <li>Created websites using Microsoft Technologies meeting client expectations from requirement stage to on-time end-to-end delivery</li>
 		  <li>Engineered dynamic reusable components for with customized settings for smooth business functioning </li>
 		  <li>Development of Test cases using XUnit Framework and continuous integration using TFS auto deployment</li>
 		  <li>Integrated 3rd Party APIs for modules</li>
@@ -408,11 +429,11 @@
       <div class="item">
         
         <div>
-          <h3>BI developer in RES Team - TCS</h3>
+          <h3>Project 3 : BI developer in RES Team </h3>
           <ul style="list-style-type:disc;">
-		   <li>Create SSIS packages for pulling online website and retail data from various data sources using BIML scripts(automation) for Client dealing Gaming and Gambling M&amp;IS Verticle</li>
+		   <li>Create SSIS packages for pulling online website and retail data from various data sources using BIML scripts(automation) for Client dealing Gaming and Gambling M&IS Verticle</li>
 		  <li>Perform ETL operations and transfer data to analytics platform using SSIS packages</li>
-		  <li>Database designing using SQL Server 2008 R2 and developed database objects containing functions, triggers &amp; stored procedures</li>
+		  <li>Database designing using SQL Server 2008 R2 and developed database objects containing functions, triggers & stored procedures</li>
 		  <li>Deployment of Packages on Production Environment using SQL Jobs</li>
 			<li>Creation of reports using SSRS</li>
 		  </ul>
@@ -421,10 +442,10 @@
 	   <div class="item">
         
         <div>
-          <h3>Backend developer in Web Enhancement team - TCS </h3>
+          <h3>Project 4 : Web developer in Web Enhancement team </h3>
           <ul style="list-style-type:disc;">
-		   <li>Design &amp; Development of business requirements using ASP.NET, C#, SQL and Umbraco CMS for Client dealing Gaming and Gambling M&amp;IS Verticle</li>
-		  <li>Created CMS Landing Page : templates customization &amp; management website using Umbraco to save front end developer’s efforts (automation)</li>
+		   <li>Design & Development of business requirements using ASP.NET, C#, SQL and Umbraco CMS for Client dealing Gaming and Gambling M&IS Verticle</li>
+		  <li>Created CMS Landing Page : templates customization & management website using Umbraco to save front end developer’s efforts (automation)</li>
 		  <li>Created utility to automate deployment process to save developer's efforts  (automation)</li>
 		  <li>Development using ADO.NET to create and modify entities, associations, mappings, and inheritance relationship</li>
 		  <li>Development of Test cases using Rhino Mocks and NUnit Framework</li>
@@ -447,93 +468,37 @@
   </div>
 </div>
     </section>
-		 <hr class="solid"  style="width:33%"/>
-   <section id="projects" class=" section-padding">
-      <h2 class="section-title">Projects</h2>
-      <div class="container">
-        <div class="row" id="project-container">
-		<div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-			<a href="https://github.com/Manisha2612/Recommendation_engine">
-              <i class="icon-link"></i>
-              <div class="services-content">
-                <h3>Recommendation engine using netflix data</h3>
-
-                <p>Recommendation for  movies based on netflix dataset using Pearsons Correlation and SVD</p>
-              </div>
-			  </a>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-              <a href="https://github.com/Manisha2612/Image-Classification-Using-TensorFlow">
-			  <i class="icon-link"></i>
-              <div class="services-content">
-                <h3>Image-Classification Using TensorFlow</h3>
-                <p>Image classification of given intel image classification data using Tensorflow Keras<br></p>
-              </div>
-			  </a>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-              <a href="https://github.com/Manisha2612/Breast-Cancer-Classification">
-			    <i class="icon-link"></i>
-              <div class="services-content">
-                <h3>Breast-Cancer Classification</h3>
-                <p>Using the Wisconsin breast cancer diagnostic data set for predictive analysis</p>
-              </div>
-			  </a>
-            </div>
-          </div>
-         
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-			<a href="https://github.com/Manisha2612/Multi-class-and-Multi-Label-Classification-Using-Support-Vector-Machines">
-			  <i class="icon-link"></i>
-			  
-              <div class="services-content">
-                <h3>Multiclass Multilabel Classification</h3>
-                <p>Species, Genus, Family prediction using SVM algorithm based on given dataset</p>
-              </div>
-			  </a>
-            </div>
-          </div>
-		  
-		  <!--service item-->
-		  <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-			<a href="https://github.com/Manisha2612/Sentiment_analysis_NLTK">
-                <i class="icon-link"></i>
-              <div class="services-content">
-                <h3>Sentiment-Analysis</h3>
-                <p>Using Amazon cutsomers review dataset predicted sentiment (positive/negative) of the reviews </p>
-              </div>
-			  </a>
-            </div>
-          </div>
-		  <!--service item-->
-		  <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item">
-                <i class="icon-link"></i>
-              <div class="services-content" >
-                <h3>WaveNet Implementation</h3>
-                <p>In progress : Implementation &amp; Extension of DeepMind's WaveNet Paper</p>
-              </div>
-            </div>
-          </div>
+<!-- Contact Section Start-->
+   <section id="curricular" class="section-padding">      
+      <div class="contact-form">
+        <div class="container">
+		<button class="accordion" style="text-align: center;">Academic Activities & Achievements </button>
+		 <div class="col-md-12 col-lg-6 col-xs-12 panel wow flipInX animated">
+          <ul>
+		  <li>Attended 8 weeks training on Microcontrollers and embedded systems.</li>
+ <li>Attended 7 days training in Nokia Siemens</li>
+ <li>Attended 10 days’ workshop Entrepreneurship development program conducted by MSME, India in Jaipur.</li>
+<li>Participated in “National Conference on Recent technological developments in Electronics and electrical engineering” organized by ECE dept, JECRC, Jaipur</li>
+          </ul>
+			</div>
+			<div class="col-md-12 col-lg-6 col-xs-12 panel wow flipInX animated">
+          <ul>
+		 
+ <li>Participated in one-week course on Wireless Networks through ICT conducted by CSE Dept, JECRC</li>
+ <li>Attended 3 days’ workshop on Technical Report writing and authoring of menu scripts with LaTeX conducted by MNIT, Jaipur</li>
+ <li>Participated in one-week course on Web Application Security Audit through ICT conducted by CSE Dept, JECRC Jaipur</li>
+ 
+          </ul>
+			</div>
         </div>
-      </div>
+      </div>   
     </section>
-  
-	 <!-- Contact Section Start -->
+
+    <!-- Contact Section Start -->
     <section id="contact" class="section-padding">      
       <div class="contact-form">
         <div class="container">
-		<h2 class="section-title" style="margin-bottom: 30px;">Let's get in touch!</h2>
+		<h2 class="section-title wow flipInX animated" style="margin-bottom: 30px;">Let's get in touch!</h2>
           <div id="images">
                   
                     <a class="facebook " href="https://www.facebook.com/manisha2612" target="_blank"><img class="fblogo" src="assets/img/facebook.jpeg"/></a>
@@ -548,8 +513,13 @@
       </div>   
     </section>
 	
+	
+	
+	
     <!-- Contact Section End -->
 	<div class="container">
+  
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog" style="padding-top:50px;">
     <div class="modal-dialog">
